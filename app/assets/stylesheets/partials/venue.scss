@@ -1,0 +1,35 @@
+/*--------------venue-----------*/
+#venue {
+  position: relative;
+}
+#venue-block {
+  height: 500px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.venue-info {
+  position: absolute;
+  height: 270px;
+  width: 370px;
+  color: #000000;
+  background-color: #ffffff;
+  opacity: 0.85;
+  right: 1%;
+  top: 25%;
+  font-size: 20px;
+  font-family: "Tamil MN";
+}
+.venue-info-inner {
+  top: calc(50% - 40px);
+  position: absolute;
+  margin: 0 5%;
+}
+@media screen and (max-width: 640px) {
+  .venue-info {
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    right: 5%;
+  }
+}

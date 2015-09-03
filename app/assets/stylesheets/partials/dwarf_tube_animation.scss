@@ -1,0 +1,96 @@
+/*--------------dwarf animation-----------*/
+.dwarf-jump {
+  background-image: image-url('jump_all_s.png');
+  position: absolute;
+  margin-left: 200px;
+  top: 360px;
+  height: 200px;
+  width: 100px;
+}
+.dwarf-jump:hover {
+  cursor: pointer;
+}
+.jump-active {
+  position: absolute;
+  height: 200px;
+  width: 100px;
+  -webkit-animation: jump 1s steps(27) 1 alternate;
+  animation: jump 1s steps(27) 1 alternate;
+}
+@-webkit-keyframes jump {
+   from { background-position: 0 0; }
+     to { background-position: -2700px 0; }
+}
+@keyframes jump {
+   from { background-position: 0 0; }
+     to { background-position: -2700px 0; }
+}
+#dwarf-scroll {
+  background-image: image-url('scroll_all_s.png');
+  position: fixed;
+  z-index: 3;
+  margin-left: 180px;
+  height: 200px;
+  width: 110px;
+  bottom: 150px;
+}
+.climb  {
+  height: 200px;
+  width: 110px;
+  -webkit-animation: climb 1s steps(24) infinite alternate;
+  animation: climb 1s steps(24) infinite alternate;
+}
+@-webkit-keyframes climb {
+   from { background-position: 0 0; }
+     to { background-position: -3430px 0; }
+}
+@keyframes climb {
+   from { background-position: 0 0; }
+     to { background-position: -3430px 0; }
+}
+.dwarf-scroll-hide{
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  #dwarf-scroll {
+    display: none!important;
+  }
+  .info-inner {
+    margin: 10px 0;
+  }
+}
+/*--------------Tube-----------*/
+#tub-repeat {
+  position: absolute;
+  @include at2x('tub_repeat_y', 'png');
+  background-repeat: repeat-y;
+  width: 95px;
+  top: 535px;
+  bottom: 0px;
+  z-index: 1;
+  margin-left: 200px;
+}
+img.tub-top {
+  position: absolute;
+  top: -18px;
+  left: -15px;
+  right: -15px;
+  z-index: 2;
+  min-width: 124px;
+  min-height: 72px;
+}
+img.tub-bottom {
+  position: absolute;
+  left: 250px;
+  bottom: 150px;
+  z-index: 2;
+}
+@media screen and (max-width: 1024px) {
+  #tub-repeat { display: none; }
+  img.tub-top { display: none; }
+  img.tub-bottom { display: none; }
+  #dwarf-scroll {display: none;}
+  .dwarf-bottom { display: none!important; }
+  .dwarf-jump {display: none!important;}
+}
+

@@ -1,0 +1,201 @@
+#schedule {
+  @include at2x('empty_speaker_mountain2', 'png');
+  background-color: $sky-blue;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center bottom;
+  text-align: center;
+  padding: 150px 0;
+  color: #fff;
+
+  h4:before {
+    content: '';
+    display: inline-block;
+    background-image:image-url("footer/square_ic.png") ;
+    width: 35px;
+    height: 10px;
+    margin-right: 15px;
+    background-repeat: space no-repeat;
+  }
+  h4:after {
+    content: '';
+    display: inline-block;
+    background-image:image-url("footer/square_ic.png") ;
+    width: 35px;
+    height: 10px;
+    margin-left: 15px;
+    background-repeat: space no-repeat;
+  }
+}
+.call-for-proposal {
+  padding: 8% 0 ;
+}
+.schedule-frame {
+  width: 590px;
+  height: 360px;
+  margin: 50px auto;
+  background: image-url('schedule.png');
+  background-position: center bottom;
+  background-size: 100% auto;
+}
+/*--------------schedule table-----------*/
+.schedule-tabel {
+  margin-bottom: 250px;
+}
+#my-tab-content {
+  margin-top: 65px;
+}
+ul#tabs {
+  text-align: center;
+  display: inline-flex;
+  margin-bottom: 50px;
+}
+.nav-pills > li {
+  width: 260px;
+  border: 2px solid #fff;
+}
+.nav-pills > li > a {
+  border-radius: 0px;
+  color: #fff;
+  background-color: #4BA9FA;
+  height: 61px;
+  line-height: 61px;
+  padding: 0;
+  transition: all .5s;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  color: $sky-blue;
+  background-color: #ffffff;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+  text-decoration: none;
+  background: rgba(255,255,255,1);
+  color: $sky-blue;
+}
+.nav-pills > li + li {
+  margin-left: 0;
+}
+.table-schedule {
+  width: 100%;
+  thead {
+  background-color: #469EEB;
+  }
+  tr{
+    .period{width: 18%;}
+    .r0,.r1{width: 41%;}
+  }
+  th {
+  border: $sky-blue 3px solid;
+  padding: 25px;
+  text-align: center;
+  letter-spacing: 2px;
+  }
+  td {
+    padding: 25px 40px;
+    border: $sky-blue 3px solid;
+  }
+  a {
+      color: #fff;
+      text-decoration: none;
+      line-height: 15px;
+      letter-spacing: 1px;
+    }
+}
+.table-schedule>tbody>tr:nth-of-type(even) {
+  background-color: #469EEB;
+}
+.table-mobile {
+  display: none;
+}
+
+/*--------------schedule (FOR QRCODE SCHEDULE PAGE)-----------*/
+#schedule_qrcode #schedule{
+  padding: 25px 0;
+}
+#schedule_qrcode .schedule-tabel{
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 30% ;
+}
+#schedule_qrcode #ul_qrcode
+{
+  margin-top: 5%;
+}
+#schedule_qrcode ul.nav.nav-pills {
+    display: inline-flex;
+}
+#schedule_qrcode .row {
+  margin-left: 0;
+  background-color: transparent;
+}
+#ul_qrcode_m li{
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  #schedule {
+    background-size: inherit;
+    background-position: 75% bottom;
+    background-size: 200%;
+  }
+  .schedule-frame {
+    width: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 450px;
+  }
+  .call-for-proposal  {
+    padding: 10% 0 15% 0;
+  }
+  ul#tabs,
+  #my-tab-content {
+    display: none;
+  }
+  .table-mobile {
+    display: table;
+    th {
+      padding: 15px;
+      line-height: 1.8em;
+      font-weight: lighter;
+    }
+    tr:nth-of-type(even) {
+      font-family: "Tamil MN";
+    }
+  }
+  /*--------------schedule (FOR QRCODE SCHEDULE PAGE :MOBILE)-----------*/
+  #schedule_qrcode #tabs {
+    text-align: center;
+    display: inline-flex;
+    margin-bottom: 50px;
+  }
+  #schedule_qrcode .nav {
+    padding-top: 3%;
+    padding-left: 15%;
+  }
+  #schedule_qrcode .nav-pills > li {
+    width: 40%;
+    border: 2px solid #fff;
+  }
+  #schedule_qrcode .nav-pills > li > a {
+    border-radius: 0px;
+    color: #fff;
+    background-color: #4BA9FA;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    transition: all .5s;
+  }
+  #schedule_qrcode .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: $sky-blue;
+    background-color: #ffffff;
+  }
+  #schedule_qrcode ul.nav.nav-pills, #ul_qrcode_m li{
+    display: block;
+  }
+  #schedule_qrcode #ul_qrcode li{
+    display: none;
+  }
+  /*-----------END---schedule (FOR QRCODE SCHEDULE PAGE)-----------*/
+}

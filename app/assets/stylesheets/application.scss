@@ -2,13 +2,9 @@
  *= require_self
  *= require static_pages
  *= require home_animation
- *= require staff_group
- *= require speaker_info
  *= require pace
  */
 
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "font-awesome-sprockets";
-@import "font-awesome";

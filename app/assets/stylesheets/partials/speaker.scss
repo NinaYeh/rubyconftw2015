@@ -1,0 +1,51 @@
+.fadeIn {
+  opacity: 0;
+}
+.block {
+  background-color: $blue-color;
+
+  &.mountain {
+    overflow: hidden;
+  }
+}
+img.mountain {
+  max-width: 104%;
+  width: 100%;
+}
+#speaker {
+  background-color: $green-color;
+  text-align: center;
+  padding-bottom: 100px;
+  h3 {
+    font-weight: bold;
+    color: #318777;
+    font-size: 20px;
+  }
+  p {
+    font-weight: lighter;
+    letter-spacing: 1px;
+  }
+}
+.description {
+  height: 150px;
+  padding: 0 15px;
+  text-align: center;
+}
+.more-btn {
+  display: block;
+  background-image: image-url('more_btn.png');
+  margin: -30px auto 70px auto;
+  width: 170px;
+  height:29px;
+}
+.avatar-mask {
+  width: 150px;
+  height: 166px;
+  margin: auto;
+  overflow: hidden;
+  -webkit-mask-image: url(speaker_mask.png);
+  -webkit-mask-repeat: no-repeat;
+  img{
+    width: 100%
+  }
+}

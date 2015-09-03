@@ -1,0 +1,35 @@
+#coc {
+  background-color: $coc-pink;
+  padding: 0 15px;
+  overflow: hidden;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  h1 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 100px;
+  }
+  p {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+.content {
+  margin: 5% 0;
+}
+.en {
+  font-weight: lighter;
+}
+@media (max-width: 992px) {
+  #coc {
+    text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  .col-sm-12  {
+    padding: 0 100px;
+  }
+}

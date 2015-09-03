@@ -1,0 +1,36 @@
+#sponsor {
+  padding: 50px 0 100px 0 ;
+  background-color: $green-color;
+  text-align: center;
+}
+.level {
+  padding: 30px;
+}
+.ruby-gem-avatar {
+  width: 50%;
+  margin: 1% -9%;
+  display: inline-block;
+}
+.imageblock {
+  margin: auto;
+  display: inline-block;
+}
+img.sponsor_ruby {
+  width: 60%;
+}
+img.azure {
+  width: 40%;
+}
+@media (max-width: 768px) {
+  .ruby-gem-avatar{
+    width: 80%;
+    margin: 2% auto;
+    padding: 0 5%;
+  }
+  img.sponsor_ruby {
+    width: 100%;
+  }
+  img.azure {
+  width: 50%;
+  }
+}

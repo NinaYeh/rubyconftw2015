@@ -1,0 +1,187 @@
+#staff{
+  @include at2x('footer/footer', 'png', 'contain');
+  background-color: $green-color;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+  height: 472px;
+
+  position: relative;
+  overflow: hidden;
+  .row{
+    margin: 0;
+  }
+  h3{
+    font-family: "Tamil MN", Microsoft JhengHei;
+    line-height: 2.2em;
+  }
+
+  h4:before,
+  .staff-all h3:before{
+    content: '';
+    display: inline-block;
+    background-image:image-url("footer/square_ic.png") ;
+    width: 10px;
+    height: 15px;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+  }
+  .show {
+    h4 {
+      margin: 0;
+    }
+    a {
+      color: #fff;
+      text-decoration: underline;
+      padding-left: 15px;
+    }
+  }
+}
+
+img.footer-bg { width: 100%; }
+
+.dwarf-bottom {
+  background-image: image-url('jump_all_s.png');
+  position: absolute;
+  margin-left: 300px;
+  bottom: 210px;
+  height: 200px;
+  width: 100px;
+  -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+  display: none;
+}
+.staff-info {
+  position: absolute;
+  z-index: 1;
+  bottom: 80px;
+  left: 30px;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  word-wrap: break-word;
+  width: 300px;
+  height: 50px
+}
+.show:hover .staff-info {
+  opacity: 1;
+  z-index: 0;
+}
+.show:not(:hover) .staff-info {
+  z-index: -1;
+}
+
+.staff-1 {
+  position: absolute;
+  left: 1010px;
+  bottom: 245px;
+}
+
+.dwarf-1 {
+  width: 105px;
+  height: 75px;
+  bottom: 0;
+  background-image: image-url('footer/dwarf_money1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+  position: absolute;
+}
+.staff-2 {
+  bottom: 0;
+  left: 555px;
+  position: absolute;
+}
+
+.dwarf-2 {
+  width: 103px;
+  height: 75px;
+  bottom: 0;
+  background-image: image-url('footer/dwarf_money2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+.staff-3 {
+  left: 755px;
+  bottom: 15px;
+  position: absolute;
+}
+.dwarf-3 {
+  width: 60px;
+  height: 90px;
+  bottom: 0px;
+  background-image: image-url('footer/dwarf3.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+.staff-4 {
+  bottom: 0;
+  left: 375px;
+  position: absolute;
+}
+.dwarf-4 {
+  width: 50px;
+  height: 75px;
+  bottom: 0;
+  background-image: image-url('footer/dwarf4.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+.staff-5 {
+  bottom: 245px;
+  left: 805px;
+  position: absolute;
+}
+.dwarf-5 {
+  width: 50px;
+  height: 75px;
+  bottom: 0;
+  background-image: image-url('footer/dwarf5.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+.staff-6 {
+  left: 1000px;
+  bottom: 0;
+  position: absolute;
+}
+.dwarf-6 {
+  width: 50px;
+  height: 74px;
+  bottom: 0;
+  background-image: image-url('footer/dwarf6.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+.dwarf-group {
+  cursor: pointer;
+  width: 120px;
+  height: 74px;
+  left: 600px;
+  bottom: 245px;
+  background-image: image-url('footer/dwarf_group.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+@media screen and (max-width: 992px) {
+  #staff {
+    @include at2x('footer/footer', 'png', 'cover');
+  }
+  .dwarf-bottom, .staff-1 ,.staff-2,.staff-3,.staff-4,
+  .staff-5,.staff-6  {
+    display: none!important;
+  }
+}
+
+@media screen and (max-width: 730px){
+  .dwarf-group {
+    left: 50%;
+    margin-left: -60px;
+  }
+}

@@ -1,0 +1,49 @@
+#registration .btn-right {
+  margin-right: 10px;
+}
+#registration .btn-left {
+  margin-right: 30px;
+}
+#registration .blue-btn:hover {
+  background-color: #fff;
+  color: $blue-color;
+}
+.btn-group {
+  text-align: center;
+  display: block;
+  text-transform: capitalize;
+  font-size: 14pt;
+}
+.btn-group > .btn {
+  float: none;
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 20px 60px;
+  margin: 5px 0px;
+  border: 2px solid #fff;
+  width: 250px;
+}
+.btn:focus {
+  color: inherit;
+}
+.blue-btn {
+  background-color: $blue-color;
+  color: #fff;
+  transition: all .5s;
+}
+.sky-blue-btn {
+  background-color: $sky-blue;
+  color: #fff;
+}
+.btn-disabled {
+  cursor: default;
+  opacity: 0.2;
+}
+@media screen and (max-width: 640px) {
+  #registration .white-btn {
+    margin-right: 0;
+  }
+  #registration .blue-btn {
+    margin-right: 0;
+  }
+}
